@@ -499,8 +499,9 @@ const Dashboard = (() => {
   function bindModal() {
     document.getElementById('modal-cancel')?.addEventListener('click', closeModal);
     document.getElementById('modal-confirm')?.addEventListener('click', () => {
+      const cb = modalCallback; // simpan dulu sebelum closeModal() null-kan
       closeModal();
-      if (modalCallback) modalCallback();
+      if (cb) cb();
     });
     document.getElementById('modal-overlay')?.addEventListener('click', e => {
       if (e.target.id === 'modal-overlay') closeModal();
