@@ -1,0 +1,85 @@
+{
+  "settings": {
+    "siteName": "Undangan.id",
+    "tagline": "Koleksi Undangan Pernikahan & Acara",
+    "whatsapp": "628123456789",
+    "currency": "Rp"
+  },
+  "products": [
+    {
+      "id": "fadhil",
+      "name": "FADHIL",
+      "category": "Premium Series",
+      "description": "Koleksi undangan premium dengan sentuhan elegan dan modern",
+      "price": "",
+      "images": [],
+      "children": [
+        {
+          "id": "fadhil-classic",
+          "name": "Classic",
+          "category": "FADHIL",
+          "description": "Desain klasik timeless dengan nuansa emas dan krem",
+          "price": "Rp 150.000",
+          "images": [],
+          "children": [
+            {
+              "id": "fadhil-classic-softcover",
+              "name": "Softcover",
+              "category": "Classic",
+              "description": "Cover lembut, elegan dan ringan",
+              "price": "Rp 150.000",
+              "images": [],
+              "children": []
+            },
+            {
+              "id": "fadhil-classic-hardcover",
+              "name": "Hardcover",
+              "category": "Classic",
+              "description": "Cover keras premium, tahan lama",
+              "price": "Rp 185.000",
+              "images": [],
+              "children": []
+            }
+          ]
+        },
+        {
+          "id": "fadhil-modern",
+          "name": "Modern",
+          "category": "FADHIL",
+          "description": "Desain kontemporer dengan layout bersih dan minimalis",
+          "price": "Rp 165.000",
+          "images": [],
+          "children": []
+        }
+      ]
+    },
+    {
+      "id": "zahra",
+      "name": "ZAHRA",
+      "category": "Elegant Series",
+      "description": "Koleksi undangan bernuansa floral dan feminin",
+      "price": "",
+      "images": [],
+      "children": [
+        {
+          "id": "zahra-rose",
+          "name": "Rose Gold",
+          "category": "ZAHRA",
+          "description": "Kombinasi rose gold dan putih yang memukau",
+          "price": "Rp 175.000",
+          "images": [],
+          "children": []
+        },
+        {
+          "id": "zahra-sage",
+          "name": "Sage Green",
+          "category": "ZAHRA",
+          "description": "Nuansa hijau sage yang segar dan natural",
+          "price": "Rp 160.000",
+          "images": [],
+          "children": []
+        }
+      ]
+    }
+  ]
+}

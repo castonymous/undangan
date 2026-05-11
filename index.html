@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Katalog Undangan</title>
+  <meta name="description" content="Katalog undangan pernikahan dan acara terlengkap">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ── HEADER ── -->
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="logo" id="site-logo">Undangan<span>.id</span></a>
+      <nav class="header-nav">
+        <a href="index.html">Katalog</a>
+        <a href="dashboard.html">Dashboard</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ── HERO ── -->
+  <section class="hero">
+    <div class="hero-content">
+      <div class="hero-badge">✨ Koleksi Terbaru 2025</div>
+      <h1>Undangan <em>Impian</em> Anda</h1>
+      <p id="site-tagline">Koleksi undangan pernikahan & acara dengan desain eksklusif dan berkelas</p>
+      <div class="search-bar-wrap">
+        <span class="search-icon">🔍</span>
+        <input
+          type="text"
+          id="search-input"
+          class="search-bar"
+          placeholder="Cari koleksi, tipe, atau nama produk..."
+        >
+      </div>
+    </div>
+  </section>
+
+  <!-- ── BREADCRUMB ── -->
+  <div class="breadcrumb" id="breadcrumb"></div>
+
+  <!-- ── MAIN ── -->
+  <main class="main-wrap">
+    <button class="back-btn" id="back-btn" style="display:none">
+      ← Kembali
+    </button>
+
+    <h2 class="section-title" id="section-title">Semua Koleksi</h2>
+    <p class="section-sub" id="section-sub">Pilih kategori untuk melihat koleksi lengkap</p>
+
+    <div class="product-grid" id="product-grid">
+      <!-- Rendered by app.js -->
+      <div class="empty-state" style="grid-column:1/-1">
+        <div class="icon">⏳</div>
+        <h3>Memuat katalog...</h3>
+        <p>Mohon tunggu sebentar</p>
+      </div>
+    </div>
+  </main>
+
+  <!-- ── WHATSAPP FLOAT ── -->
+  <a href="https://wa.me/" id="wa-link" target="_blank" class="wa-float" title="Chat WhatsApp">
+    💬
+  </a>
+
+  <div id="toast" class="toast"></div>
+
+  <script src="app.js"></script>
+</body>
+</html>

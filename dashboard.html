@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard — Katalog Undangan</title>
+  <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+
+<div class="dash-layout">
+
+  <!-- ══ SIDEBAR ══ -->
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-header">
+      <span class="sidebar-logo">Undangan<span>.id</span></span>
+      <span class="sidebar-label">Dashboard Admin</span>
+    </div>
+
+    <div class="sidebar-section-label">Produk</div>
+    <div class="sidebar-tree" id="sidebar-tree">
+      <!-- Rendered by dashboard.js -->
+    </div>
+
+    <div class="sidebar-actions">
+      <button class="sidebar-btn btn-gold" onclick="Dashboard.addRootProduct()">
+        ＋ Produk Baru
+      </button>
+      <button class="sidebar-btn btn-outline" onclick="Dashboard.renderSettings()">
+        ⚙️ Pengaturan
+      </button>
+      <a href="index.html" target="_blank" class="sidebar-btn btn-outline">
+        👁️ Lihat Katalog
+      </a>
+      <button class="sidebar-btn btn-outline" onclick="Dashboard.exportData()">
+        ⬇️ Export JSON
+      </button>
+    </div>
+  </aside>
+
+  <!-- ══ MAIN ══ -->
+  <div class="main-content">
+
+    <!-- TOPBAR -->
+    <div class="topbar">
+      <div class="topbar-title">✏️ Editor Produk</div>
+      <div class="topbar-actions">
+        <button class="btn btn-secondary" id="btn-settings">⚙️ Pengaturan</button>
+        <button class="btn btn-secondary" id="btn-preview">👁️ Preview</button>
+        <button class="btn btn-primary" id="btn-add-root">＋ Produk Baru</button>
+      </div>
+    </div>
+
+    <!-- CONTENT -->
+    <div class="content-area" id="content-area">
+      <!-- Rendered by dashboard.js -->
+    </div>
+
+  </div>
+
+</div>
+
+<!-- ══ MODAL ══ -->
+<div class="modal-overlay" id="modal-overlay">
+  <div class="modal">
+    <h3 id="modal-title">Konfirmasi</h3>
+    <p id="modal-body"></p>
+    <div class="modal-actions">
+      <button class="btn btn-secondary" id="modal-cancel">Batal</button>
+      <button class="btn" style="background:var(--danger);color:white" id="modal-confirm">Ya, Lanjutkan</button>
+    </div>
+  </div>
+</div>
+
+<div id="toast" class="toast"></div>
+
+<script src="dashboard.js"></script>
+</body>
+</html>
