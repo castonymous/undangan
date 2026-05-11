@@ -544,4 +544,12 @@ const Dashboard = (() => {
   };
 })();
 
-document.addEventListener('DOMContentLoaded', Dashboard.init);
+document.addEventListener('DOMContentLoaded', () => {
+  // Hanya init dashboard kalau sudah terautentikasi
+  // Auth check dilakukan oleh auth.js
+  const sessionKey = 'dash_auth_v1';
+  if (sessionStorage.getItem(sessionKey) === 'ok') {
+    Dashboard.init();
+  }
+  // Kalau belum auth, auth.js yang akan panggil Dashboard.init() setelah login sukses
+});
